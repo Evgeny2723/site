@@ -1,0 +1,697 @@
+@import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@500;600;700&display=swap");
+
+body {
+	height: 100%;
+	font-family: "Lato", sans-serif;
+	font-family: "Montserrat", sans-serif;
+	background-color: #2d2d2d;
+}
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.conteiner {
+	max-width: 1360px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.page {
+	flex: 1 1 auto;
+}
+
+.header {
+	position: relative;
+	top: 15px;
+	width: 100%;
+	height: 78px;
+	margin: 0px 0px 280px 0px;
+
+	&__menu {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__logo {
+		display: flex;
+		flex: 0 0 60px;
+		img {
+			max-width: 100%;
+		}
+		span {
+			color: #f5f5f5;
+			font-weight: 700;
+			font-size: 33.304px;
+			line-height: 41px;
+			padding: 0px 0px 0px 20px;
+		}
+	}
+}
+
+.menu {
+	&__body {
+	}
+
+	&__list {
+		display: flex;
+		li {
+			padding: 0px 40px 0px 0px;
+			&:last-child {
+				padding: 0;
+			}
+		}
+	}
+
+	&__link {
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 18px;
+		color: #f5f5f5;
+	}
+}
+.call__btn {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #f5f5f5;
+	border: 3px solid #5e9e0f;
+	border-radius: 5px;
+	padding: 15px 50px;
+}
+.call__btn:hover {
+	background-color: #5e9e0f;
+}
+// =========================================================================================================
+
+.main-screen {
+	width: 980px;
+	margin: 0 auto;
+	&__title {
+		color: #f0f0f0;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 59px;
+		text-align: center;
+		margin: 0px 0px 20px 0px;
+	}
+
+	&__text {
+		margin: 0px 0px 70px 0px;
+		color: #b0b0b0;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+	}
+
+	&__buttons {
+		margin: 0px 0px 355px 0px;
+	}
+}
+.buttons {
+	display: flex;
+	justify-content: center;
+	a {
+		padding: 15px 36px;
+		width: 248px;
+		height: 50px;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 20px;
+		color: #f5f5f5;
+		border: 3px solid #5e9e0f;
+		border-radius: 5px;
+	}
+	.button__link {
+		margin: 0px 21px 0px 0px;
+	}
+	.button__link2 {
+		padding: 15px 73px;
+		margin: 0px 0px 0px 21px;
+	}
+}
+.button__link:hover,
+.button__link2:hover {
+	background-color: #5e9e0f;
+}
+
+// ==========================================================================================================
+
+.cubes {
+	&__row {
+		display: flex;
+	}
+	position: relative;
+	width: 1360px;
+	height: 620px;
+	margin: 0 auto;
+	border-radius: 10px;
+	background-color: #f0f0f0;
+	&__body {
+		width: 522px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 98px 0px 0px 140px;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 64px;
+		line-height: 78px;
+		color: #2d2d2d;
+		margin: 0px 0px 15px 0px;
+	}
+
+	&__text {
+		max-width: 370px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 23px;
+		letter-spacing: 0.75px;
+		color: #656565;
+		margin: 0px 0px 40px 0px;
+	}
+
+	&__list {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 23px;
+		letter-spacing: 0.75px;
+		color: #656565;
+		margin: 0px 0px 94px 0px;
+		li {
+			margin: 0px 0px 5px 0px;
+			padding: 0px 0px 0px 28px;
+			&::before{
+				content: '';
+				position: absolute;
+				left: 0;
+				width: 16px;
+				height: 16px;
+				border-radius: 50%;
+				background-color: #5e9e0f;
+			}
+		}
+	}
+
+	&__btn {
+		span {
+			display: block;
+			text-align: center;
+			padding: 15px 36px;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 20px;
+			color: #656565;
+			width: 258px;
+			height: 50px;
+			border: 3px solid #5e9e0f;
+			border-radius: 5px;
+		}
+	}
+	&__btn span:hover {
+		color: #f5f5f5;
+		background-color: #5e9e0f;
+	}
+	&__img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 68px 140px 0px 0px;
+		flex: 0 0 500px;
+		img {
+			max-width: 100%;
+		}
+	}
+	margin: 300px auto;
+}
+// ===========================================================================================================================
+
+.catalog {
+	height: 931px;
+	margin: 0px 0px 300px 0px;
+	&__title {
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 59px;
+		color: #f0f0f0;
+		margin: 0px 0px 50px 0px;
+	}
+
+	&__column {
+		display: flex;
+		margin: 0px -24px;
+	}
+
+	&__blok-1 {
+		flex: 1 1 66.667%;
+		padding: 0px 24px;
+		position: relative;
+	}
+	&__blok-2 {
+		flex: 1 1 33.333%;
+		position: relative;
+		padding: 0px 24px;
+	}
+
+	&__item-2 {
+		height: 500px;
+		margin: 0px 0px 40px 0px;
+	}
+
+	&__item {
+		margin: 0px 34px 0px 0px;
+	}
+	&__item-right {
+		position: relative;
+		.item__subtitle {
+			width: 321px;
+		}
+		.item__image {
+			position: absolute;
+			bottom: 50px;
+			right: 0;
+			margin: 0px 10px 20px 0px;
+		}
+	}
+}
+
+.item {
+	box-shadow: 0 0 10px #000;
+
+	background: #4f4f4f;
+	border-radius: 10px;
+	position: relative;
+	&__column {
+		display: flex;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 36px;
+		color: #f0f0f0;
+		padding: 20px 0px 15px 30px;
+	}
+
+	&__subtitle {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 19px;
+		color: #f0f0f0;
+		margin: 0px 0px 55px 30px;
+	}
+
+	&__image {
+		text-align: center;
+		margin: 0px 91px 91px 91px;
+	}
+
+	&__button {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: inline-block;
+		height: 38px;
+		line-height: 35px;
+		padding: 0px 15px;
+		border: 2px solid #f0f0f0;
+		border-radius: 5px;
+		font-weight: 600;
+		font-size: 15px;
+		color: #f0f0f0;
+		margin: 0px 30px 30px 30px;
+		span {
+			padding: 0px 30px 0px 0px;
+			background: url("../img/Стрелка.png") right no-repeat;
+		}
+	}
+	&__button:hover {
+		background-color: #5e9e0f;
+	}
+}
+
+.catalog__item_b {
+	height: 402px;
+	margin: 40px 0px 0px 0px;
+	.item__subtitle {
+		width: 321px;
+	}
+	.item__image {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin: 0px 20px 20px 0px;
+	}
+}
+
+.catalog__item-2l {
+	height: 282px;
+	.item__image {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin: 0px 20px 20px 0px;
+	}
+}
+
+// ==============================================================================================================
+
+.partners {
+	&__title {
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 59px;
+		color: #f0f0f0;
+		margin: 0px 0px 100px 0px;
+	}
+
+	&__row {
+		display: flex;
+		margin: 0px 0px 150px 0px;
+	}
+
+	&__block {
+		width: 237px;
+		height: 273px;
+		margin: 0px 110px 0px 0px;
+	}
+}
+
+.block {
+	&__icon {
+		flex: 1 1 64px;
+		margin: 0px 0px 20px 0px;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 29px;
+		color: #f0f0f0;
+		margin: 0px 0px 15px 0px;
+	}
+
+	&__subtitle {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 19px;
+		color: #b0b0b0;
+		margin: 0px 0px 35px 0px;
+	}
+
+	&__btn {
+		display: inline-block;
+		height: 38px;
+		line-height: 35px;
+		padding: 0px 15px;
+		border: 2px solid #f0f0f0;
+		border-radius: 5px;
+		font-weight: 600;
+		font-size: 15px;
+		color: #f0f0f0;
+	}
+	&__btn:hover {
+		background: #5e9e0f;
+	}
+}
+.block__btn span {
+	padding: 0px 30px 0px 0px;
+	background: url("../img/Стрелка.png") right no-repeat;
+}
+
+.partners {
+	margin: 0px 0px 300px 0px;
+	&__icons {
+		height: 101px;
+		background: #4f4f4f;
+		border-radius: 10px;
+	}
+}
+
+.icons {
+	&__row {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 25px 0px 0px 0px;
+	}
+}
+
+// ====================================================================================================================
+
+.news {
+	margin: 0px 0px 130px 0px;
+	&__title {
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 59px;
+		color: #f5f5f5;
+		margin: 0px 0px 50px 0px;
+	}
+
+	&__body {
+	}
+}
+
+.cards {
+	&__row {
+		display: flex;
+	}
+}
+.card {
+	box-shadow: 0 0 10px #000;
+	margin: 0px 40px 0px 0px;
+	height: 310px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px 30px 0px 30px;
+	text-align: left;
+	background-color: #4f4f4f;
+	width: 310px;
+	border-radius: 10px;
+	&__title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 29px;
+		color: #f0f0f0;
+		margin: 0px 0px 14px 0px;
+		flex: 1 1 auto;
+	}
+
+	&__subtitle {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 19px;
+		color: #b0b0b0;
+	}
+
+	&__btnl {
+		width: 106px;
+		height: 38px;
+		padding: 0 15px;
+		border: 2px solid #f0f0f0;
+		border-radius: 5px;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 38px;
+		color: #f0f0f0;
+		span {
+			background: url(../img/Стрелка.png) left no-repeat;
+		}
+		margin: 0px 0px 30px 0px;
+	}
+	&__btnl:hover {
+		background-color: #5e9e0f;
+	}
+}
+.card-1 {
+	height: 480px;
+	.card__title {
+		flex: 0 0 auto;
+	}
+	.card__subtitle {
+		flex: 1 1 auto;
+	}
+}
+
+.card-2 {
+}
+
+.card-3 {
+}
+
+.card-4 {
+}
+
+// =====================================================================================================================
+
+.footer {
+	background: #f0f0f0;
+	&__body {
+		padding: 98px 0px 107px 0px;
+		display: flex;
+		margin: 0 auto;
+	}
+	&__dop {
+		display: flex;
+		justify-content: center;
+		margin: 0px -25px 62px -25px;
+	}
+}
+
+.content {
+	display: flex;
+	width: 50%;
+	margin: 0 -30px;
+	&__block-1 {
+		padding: 0 30px;
+	}
+
+	&__block-2 {
+		padding: 0 30px;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 446px;
+			height: 2px;
+			bottom: 240px;
+			left: 85px;
+			background-color: rgba(45, 45, 45, 0.1);
+			transform: rotate(90deg);
+		}
+	}
+}
+.block-1 {
+	&__logo {
+		width: 41px;
+		height: 41px;
+		img {
+			max-width: 100%;
+		}
+		display: flex;
+		margin: 0px 0px 31px 0px;
+	}
+
+	&__title {
+		padding: 0px 0px 0px 19px;
+		font-weight: 700;
+		font-size: 33.304px;
+		line-height: 41px;
+		color: #2d2d2d;
+	}
+
+	&__text {
+		width: 274px;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 130%;
+		color: #4f4f4f;
+	}
+}
+.product {
+	margin: 0px 0px 50px 0px;
+}
+.block-2 {
+	&__title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 29px;
+		color: #2d2d2d;
+		margin: 0px 0px 20px 0px;
+	}
+
+	&__list {
+		li {
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	&__link {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 130%;
+		color: #4f4f4f;
+	}
+}
+.company {
+}
+.call {
+	margin: 0px 0px 0px 90px;
+	&__title {
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 59px;
+		color: #2d2d2d;
+		margin: 0px 0px 28px 0px;
+	}
+
+	&__input {
+		display: flex;
+		margin: 0px 0px 64px 0px;
+	}
+
+	&__icons {
+		margin: 0px 0px 30px 0px;
+		img {
+			margin: 0px 25px 0px 0px;
+		}
+	}
+}
+.form {
+	&__input {
+	}
+
+	&__button {
+	}
+}
+.input {
+	flex: 1 1 auto;
+	border: 1px solid #2d2d2d;
+	border-radius: 5px 0px 0px 5px;
+	width: 255px;
+	height: 50px;
+	background: #f0f0f0;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 130%;
+	color: #2d2d2d;
+	padding: 0px 0px 0px 20px;
+	&::placeholder {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 130%;
+		color: #2d2d2d;
+	}
+}
+.button {
+	width: 49px;
+	height: 50px;
+
+	background: #5e9e0f;
+	border-radius: 0px 5px 5px 0px;
+	&:hover {
+		background: #4f4f4f;
+	}
+}
+.tel {
+	margin: 0px 0px 9px 0px;
+}
+.mail {
+}
+.dop__link {
+	padding: 0 25px;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 18px;
+	color: #4f4f4f;
+}
